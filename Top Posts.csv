@@ -1,0 +1,1149 @@
+,Title,Post Text,ID,Score,Total Comments,Post URL
+0,The Python Mega Course is still free on Udemy,"As some of you may know, ""**The Python Mega Course: Build 10 Real World Applications**"" is one of the top Python courses on Udemy. Last year, I made that version of the course available for free to the Reddit community, and I am doing the same today. 
+
+ In 2023, the course attracted 20,000+ students and collected 900+ reviews, achieving an exceptionally high average rating of 4.8/5 on Udemy. This makes the course exceptionally highly rated on Udemy.
+
+**How can you get the course for free today?**
+
+Three simple steps:
+
+1. Login to Udemy.
+2. Go to the course page: [https://udemy.com/course/former-python-mega-course-build-10-real-world-applications/](https://udemy.com/course/former-python-mega-course-build-10-real-world-applications/)
+3. Enter the password **mega\_course** to get the course for free.
+
+Thanks and have a relaxing end of the year!",18tn8y0,966,159,https://www.reddit.com/r/Python/comments/18tn8y0/the_python_mega_course_is_still_free_on_udemy/
+1,Breaking news: Python 3.13 gets a JIT compiler that will enable big optimizations in the future.,"Exciting news here: https://tonybaloney.github.io/posts/python-gets-a-jit.html
+
+This is just the first step for Python to enable optimizations not possible now.
+
+Do not expect much from it since this is a first step to optimization. In the future this JIT will enable further performance improvements not possible now.",192b53m,710,110,https://www.reddit.com/r/Python/comments/192b53m/breaking_news_python_313_gets_a_jit_compiler_that/
+2,How to prevent python software from being reverse engineered or pirated?,"I have a program on the internet that users pay to download and use. I'm thinking about adding a free trial, but I'm very concerned that users can simply download the trial and bypass the restrictions. The program is fully offline and somewhat simple. It's not like you need an entire team to crack it.
+
+In fact, there is literally a pyinstaller unpacker out there that can revert the EXE straight back to its python source code. I use pyinstaller.
+
+Anything I can do? One thing to look out for is unpackers, and the other thing is how to make it difficult for Ghidra for example to reverse the program.
+
+Edit: to clarify, I can't just offer this as an online service/program because it requires interaction with the user's system. ",18tdmiv,429,240,https://www.reddit.com/r/Python/comments/18tdmiv/how_to_prevent_python_software_from_being_reverse/
+3,Optimizing Python Code,"What are your go-to strategies for improving performance in Python applications? Whether it's leveraging libraries, optimizing algorithms, or utilizing advanced features, share your technical insights and best practices for writing efficient Python code",19cqhqv,432,117,https://www.reddit.com/r/Python/comments/19cqhqv/optimizing_python_code/
+4,Why Python is slower than Java?,"Sorry for the stupid question, I just have strange question.
+
+If CPython interprets Python source code and saves them as byte-code in .pyc and java does similar thing only with compiler, In next request to code, interpreter will not interpret source code ,it will take previously interpreted .pyc files ,  why python is slower here?
+
+Both PVM and JVM will read  previously saved byte code then why JVM executes much faster than PVM?
+
+Sorry for my english , let me know if u don't understand anything. I will try to explain",18xfmq2,382,155,https://www.reddit.com/r/Python/comments/18xfmq2/why_python_is_slower_than_java/
+5,Why Python is slow and how to make it faster,"As there was a recent discussion on Python's speed, here is a collection of some good articles discussing about Python's speed and why it poses extra challenges to be fast as CPU instructions/executed code.
+
+* Pycon talk: [Anthony Shaw - Why Python is slow](https://www.youtube.com/watch?v=I4nkgJdVZFA)
+* Pycon talk: [Mark Shannon - How we are making CPython faster](https://www.youtube.com/watch?v=wyty6sFMWI0)
+* [Python 3.13 will ship with --enable-jit, --disable-gil](https://twitter.com/anthonypjshaw/status/1744144186478375373)
+* [Python performance: it’s not just the interpreter](https://blog.kevmod.com/2020/05/19/python-performance-its-not-just-the-interpreter/)
+* [Cinder: Instagram's performance-oriented Python fork](https://twitter.com/anthonypjshaw/status/1744144186478375373)
+
+Also remember, the raw CPU speed rarely matters, as many workloads are IO-bound, network-bound, or a performance question is irrelevant... or: Python trades some software development cost for increased hardware cost. In these cases, Python extensions and specialised libraries can do the heavy lifting outside the interpreter (PyArrow, Polards, Pandas, Numba, etc.).",191gmtm,300,199,https://www.reddit.com/r/Python/comments/191gmtm/why_python_is_slow_and_how_to_make_it_faster/
+6,What is the optimal structure for a Python project?,How to structure backend Python project?,18qkivr,254,53,https://www.reddit.com/r/Python/comments/18qkivr/what_is_the_optimal_structure_for_a_python_project/
+7,Polars DataFrames now have a `.plot` namespace!,"As of Polars 0.20.3, you can use \`polars.DataFrame.plot\` to visualise your data.
+
+The plotting logic isn't in Polars itself, but in hvplot (so you'll need that installed too)
+
+&#x200B;
+
+Here's some examples of what you can do:
+
+https://preview.redd.it/h8fhtnvi02ac1.png?width=693&format=png&auto=webp&s=5a299bac0df26575f3a4efa071707061cea719c4
+
+https://preview.redd.it/k2071pvi02ac1.png?width=728&format=png&auto=webp&s=3ed2ce9e07f39b7c694f4dc8648647bed34daa60
+
+https://preview.redd.it/r8t6oovi02ac1.png?width=680&format=png&auto=webp&s=907461be7c05fdd63b1b469cd8fd5c24c2b9741d
+
+https://preview.redd.it/bm8yuqvi02ac1.png?width=742&format=png&auto=webp&s=358da56c5c3e2d13bbf3576e655f3bc7b6e9d24a
+
+https://preview.redd.it/mi0udtvi02ac1.png?width=734&format=png&auto=webp&s=160f01651d2723742630cb5af50a90c74972c8d4",18wti72,238,35,https://www.reddit.com/r/Python/comments/18wti72/polars_dataframes_now_have_a_plot_namespace/
+8,PyPy has moved to GitHub,PyPy has moved its development efforts from Mercurial + Heptapod to Git + GitHub. Read more about it [here](https://www.pypy.org/posts/2023/12/pypy-moved-to-git-github.html),18w45u2,231,23,https://www.reddit.com/r/Python/comments/18w45u2/pypy_has_moved_to_github/
+9,Want a real-world example of recursion?,"Taken from the registration page for PyCon 2024 US, in answer to the question 'What does my registration payment go towards?'
+
+""*Your registration payments help us keep PyCon US registration tickets reasonably priced.* ""
+
+https://us.pycon.org/2024/attend/information/",198dp2o,214,94,https://www.reddit.com/r/Python/comments/198dp2o/want_a_realworld_example_of_recursion/
+10,"NumPy 2 is coming: preventing breakage, updating your code","NumPy 2 is a new major release, with a release candidate coming out February 1st 2024, and a final release a month or two later. Importantly, it’s backwards incompatible; not in a major way, but enough that some work
+
+[https://pythonspeed.com/articles/numpy-2/](https://pythonspeed.com/articles/numpy-2/)
+
+&#x200B;",192pccr,212,43,https://www.reddit.com/r/Python/comments/192pccr/numpy_2_is_coming_preventing_breakage_updating/
+11,Why are python dataclasses not JSON serializable?,"I simply added a ‘to_dict’ class method which calls ‘dataclasses.asdict(self)’ to handle this. Regardless of workarounds, shouldn’t dataclasses in python be JSON serializable out of the box given their purpose as a data object?
+
+Am I misunderstanding something here? What would be other ways of doing this?",193lp4s,207,171,https://www.reddit.com/r/Python/comments/193lp4s/why_are_python_dataclasses_not_json_serializable/
+12,Modern alternatives to Data Science Libraries like Polars with Pandas?,"I've been trying Polars and love them more than Pandas. In addition to performance, I find the API better designed (fewer ways to do the same thing) which, I think, allows memorizing the syntax faster, I would recommend Polars instead of Pandas to a new person.
+
+Are there any modern alternatives for data visualization, algorithms, etc. that you are considering as an upgrade to your stack?",196jbms,202,70,https://www.reddit.com/r/Python/comments/196jbms/modern_alternatives_to_data_science_libraries/
+13,Do You Ever del?,"I've been coding in Python for years, mostly backend web-based stuff, but almost never `del` anything. Has anyone ever found interesting or compelling places to use it?",18vgrc9,193,117,https://www.reddit.com/r/Python/comments/18vgrc9/do_you_ever_del/
+14,Are local imports a good idea to speed up import time?,"My script has a long \*startup time\* just importing all its modules at the top of the file.
+
+But not all of those modules are needed for every feature of the script, so I tried to reduce startup time by moving those import statements to local imports inside only the functions that need them.
+
+Are there any reasons not to do this?",198vrtj,192,78,https://www.reddit.com/r/Python/comments/198vrtj/are_local_imports_a_good_idea_to_speed_up_import/
+15,did someone hit pycharm with a brick?,"i keep finding stupid little bugs like false-positives in code-inspection, auto-import failing to find symbols in eg a sister module, all kinds of minor irritata (should be a word so i made it so) that i'm sure were not there before...  
+
+
+its possible im writing more complex code and so making more obscure errors than i used to, but it feels like they're moving too quickly and missing stuff.  
+
+
+elephant in the post is i suppose most of their dev work is currently on the ai assistant which i paid for and uninstalled after a week. it's terrible. copilot-which i also pay for -also has major issues, like chat keeps crashing the ide,...i get way better help by copy-pasting to gpt4 in browser.  
+
+
+i feel everyone is releasing minimum viable product in the mad ai goldrush, and basic shit is going to hell.  
+
+
+rant ends",1917rxi,189,93,https://www.reddit.com/r/Python/comments/1917rxi/did_someone_hit_pycharm_with_a_brick/
+16,Anyone have examples of a Python visualisation package used to produce journalist-quality charts/infographics?,"Examples of journalist-quality charts/infographics:
+
+* [https://bbc.github.io/rcookbook/#how\_to\_create\_bbc\_style\_graphics](https://bbc.github.io/rcookbook/#how_to_create_bbc_style_graphics)
+* [https://pudding.cool/](https://pudding.cool/)
+* [https://github.com/onlyphantom/rgraphics/tree/master](https://github.com/onlyphantom/rgraphics/tree/master)
+
+Most of these examples feature the use of the ggplot2 library from R's Tidyverse. To be clear, I am not looking for a Python equivalent to ggplot. I am aware of and have used libraries like [plotnine](https://plotnine.readthedocs.io/en/v0.12.4/) and [lets-plot](https://lets-plot.org/) that focus on a syntax inspired by the grammar of graphics.
+
+I am specifically looking for a viz library that has the fine-grain control and polish to create examples like I've linked above. Ie. a library where a professional journalist team have relied on to produce high quality info graphics.
+
+Prior to asking this question, I have searched through [https://pyviz.org/](https://pyviz.org/). Didn't really find what I was looking for.
+
+&#x200B;",193y9wj,177,102,https://www.reddit.com/r/Python/comments/193y9wj/anyone_have_examples_of_a_python_visualisation/
+17,One billion row challenge,"Just saw this repo trending and thought of doing this in different languages, e.g. Python.  
+
+
+[https://github.com/gunnarmorling/1brc](https://github.com/gunnarmorling/1brc)  
+
+
+Do you know if it's already available?",18zi0o5,179,55,https://www.reddit.com/r/Python/comments/18zi0o5/one_billion_row_challenge/
+18,RuGiVi - Adult media landscape browser,"I wrote a python app using pygame to fly over an image collection (in my case, an adult collection) and view thousands of images at once. Zoom in and out from one image to small thumbnails with your mousewheel in seconds.
+
+Here is the code: [https://github.com/pronopython/rugivi](https://github.com/pronopython/rugivi)
+
+&#x200B;
+
+https://preview.redd.it/mgw70srpiv8c1.jpg?width=1200&format=pjpg&auto=webp&s=03e1324c4396a621d04a8673cc23a91dc36dd66c
+
+All images are grouped as you have them on your disk and arranged in a huge landscape. RuGiVi can work with hundred thousand of images at once. It runs under Linux and Windows.
+
+\- Works with hundreds of thousands of images at the same time
+
+\- Tested with around 700.000 images (see the world map shown here), that's a RuGiVi Pixel size of 4.600.000 x 4.400.000 pixels or 20.240.000 Megapixels or 10.120.000 Full HD Screens to be scrolled through
+
+\- Dynamic view rendering - screen is updated partially when drawing takes more time
+
+\- Thumbnails are cached in a database
+
+I'm really looking forward on feedback (it's still an alpha release), ideas... :-)
+
+I have more open source apps written in python to organize and enjoy a collection, have a look at them: [https://github.com/pronopython](https://github.com/pronopython)",18s68rl,170,36,https://www.reddit.com/r/Python/comments/18s68rl/rugivi_adult_media_landscape_browser/
+19,PEP 736 – Shorthand syntax for keyword arguments at invocation,"A new PEP has been posted: https://peps.python.org/pep-0736/
+
+It proposes to introduce the syntax:
+
+    year = 1982
+    title = ""Blade Runner""
+    director = ""Ridley Scott""
+    func(year=, title=, director=)
+
+As shorthand for:
+
+    func(year=year, title=title, director=director)
+
+So, if variable name and keyword argument name are identical, you wouldn't need to repeat it with the new proposed syntax.",1934p64,151,251,https://www.reddit.com/r/Python/comments/1934p64/pep_736_shorthand_syntax_for_keyword_arguments_at/
+20,15 most watched talks from PyCon 2023 (US and AU),"Hi👋! I think the 2023 edition of both PyCons were awesome and I've compiled a list of the most watched talks including PyCon US and PyCon AU. With some help of Python, Pandas, and Jupyter, here's the final top 15 list (and [**here's the full one**](https://techtalksweekly.substack.com/p/all-pycon-2023-talks-sorted-by-views)):
+
+1. [**""What can't WebAssembly do?"" - Katie Bell (PyCon AU 2023)""**](https://www.youtube.com/watch?v=JbZAsSzzk0E) ⸱ **+51k views** ⸱ 00h 29m 03s
+1. [**""Mario Munoz: Web Development With A Python-backed Frontend: Featuring HTMX and Tailwind""**](https://youtube.com/watch?v=YUoflPpVLjQ) ⸱ **+8k views** ⸱ 02h 26m 00s
+2. [**""The Terrifying Longevity of Ideas"" - Benno Rice (PyCon AU 2023)""**](https://youtube.com/watch?v=yc248GXjvA8) ⸱ **+8k views** ⸱ 00h 48m 29s- *there's a nice point in this talk about how ideas get locked into place, like CPU design and programming languages like Python.*
+3. [**""Matt Harrison: Getting Started with Polars""**](https://youtube.com/watch?v=CJ0f45evuME) ⸱ **+7k views** ⸱ 02h 14m 28s
+4. [**""Samuel Colvin: How Pydantic V2 leverages Rust's Superpowers""**](https://youtube.com/watch?v=pWZw7hYoRVU) ⸱ **+5k views** ⸱ 00h 45m 55s
+5. [**""Simon Willison: Data analysis with SQLite and Python""**](https://youtube.com/watch?v=5TdIxxBPUSI) ⸱ **+4k views** ⸱ 02h 45m 54s
+6. [**""Hynek Schlawack: Subclassing, Composition, Python, and You""**](https://youtube.com/watch?v=k8MT5liCQ7g) ⸱ **+4k views** ⸱ 00h 45m 42s
+7. [**""Reuven M. Lerner: Comprehending comprehensions""**](https://youtube.com/watch?v=qMv1ZD2V1A4) ⸱ **+4k views** ⸱ 02h 17m 33s
+8. [**""Lisa Carpenter: How to create beautiful interactive GUIs and web apps""**](https://youtube.com/watch?v=cw44529_OU8) ⸱ **+4k views** ⸱ 01h 58m 05s
+9. [**""Guido van Rossum's keynote""**](https://youtube.com/watch?v=yp6WuHFhYCo) ⸱ **+4k views** ⸱ 00h 30m 51s
+10. [**""James Powell's keynote""**](https://youtube.com/watch?v=iKzOBWOHGFE) ⸱ **+4k views** ⸱ 00h 25m 43s
+11. [**""Bruce Eckel: Rethinking Objects""**](https://youtube.com/watch?v=2Ul6WlKPcgY) ⸱ **+3k views** ⸱ 00h 32m 06s
+12. [**""Trey Hunner: Intro to Python for Brand New Programmers""**](https://youtube.com/watch?v=v8o-7UICRNk) ⸱ **+3k views** ⸱ 02h 16m 41s
+13. [**""Ted Patrick: Writing Serverless Python Web Apps with PyScript""**](https://youtube.com/watch?v=RVmltK006CU) ⸱ **+3k views** ⸱ 02h 55m 29s
+14. [**""Brett Cannon: Python's syntactic sugar""**](https://youtube.com/watch?v=6gjvjkSs570) ⸱ **+3k views** ⸱ 00h 31m 11s
+
+[**Here's a full list of PyCon 2023 talks sorted by views**](https://techtalksweekly.substack.com/p/all-pycon-2023-talks-sorted-by-views)
+
+I hope you enjoyed it! Let me know if you'd like more compilations like this in /r/Python.
+
+btw. I'm building a 📬 newsletter called [**Tech Talks Weekly**](https://techtalksweekly.substack.com/)**. By subscribing, every Thursday you'll receive the top trending and most-watched tech talks from various software engineering conferences that have been recently uploaded.**",196b3ak,138,12,https://www.reddit.com/r/Python/comments/196b3ak/15_most_watched_talks_from_pycon_2023_us_and_au/
+21,"Okay, I have this genuine question, why does Python allow hashing functions?","So I was working on my programming language and was taking inspiration from Python, and realized that Python allows hashing functions and you can have functions As keys, this is what confuses me here what is the use of this, and how do they do it to begin with?
+
+Like do they have something like a dictionary data structure that has Python objects as keys? That sounds like it's memory inefficient.
+
+&#x200B;",18x4kw6,134,50,https://www.reddit.com/r/Python/comments/18x4kw6/okay_i_have_this_genuine_question_why_does_python/
+22,Granian 1.0 is out,"Granian (the [Rust HTTP server](https://github.com/emmett-framework/granian) for Python applications) [reached 1.0](https://github.com/emmett-framework/granian/releases/tag/v1.0.0).
+
+The release's highlights include:
+- Support for ASGI lifespan state (some frameworks like Starlette and FastAPI rely on this)
+- Support for [ASGI pathsend](https://asgi.readthedocs.io/en/latest/extensions.html#path-send)
+- Improvements in workers processes management",19cs4qx,135,28,https://www.reddit.com/r/Python/comments/19cs4qx/granian_10_is_out/
+23,Fastest Way to Read Excel in Python,,18xitr3,113,25,https://hakibenita.com/fast-excel-python
+24,I put together a simple python function to print a histogram as unicode text ▁▂▄█▆▃▁▁,"You can view the gist here: https://gist.github.com/mattmills49/44a50b23d3c7a8f71dfadadd0f876ac2
+
+Here is how the function works: https://pbs.twimg.com/media/GEiGQoEXQAAuSGC?format=jpg&name=small
+
+A quick example showing how you can use it on a dataframe to get a quick and concise summary of your data: https://pbs.twimg.com/media/GEiFbpNX0AAHg7R?format=jpg&name=small
+
+And even include it in plain text using jupyter or quarto: https://pbs.twimg.com/media/GEiGTi9WgAAbPo-?format=png&name=900x900
+
+EDIT: Thanks to u/RedKrieg for pointing out that these are called sparklines and for sharing his own package that you all should check out as well.",19dpj61,179,21,https://www.reddit.com/r/Python/comments/19dpj61/i_put_together_a_simple_python_function_to_print/
+25,Memory Optimization Techniques for Python Developers,"Python, especially when compared to lower-level languages like C or C++, seems not memory-efficient enough.
+
+However, there are still rooms for Python developers to do memory optimization.
+
+[This article](https://medium.com/techtofreedom/7-python-memory-optimization-tricks-to-enhance-your-codes-efficiency-5ef65bf415e7?sk=df088bcfb5315fe1fca54d22dc57a1bb) introduces 7 primitive but effective memory optimization tricks. Mastering them will enhance your Python programming skills significantly.",19789aq,102,30,https://www.reddit.com/r/Python/comments/19789aq/memory_optimization_techniques_for_python/
+26,Annotating args and kwargs in Python,"I tend to avoid *args and **kwargs in Python as they often obscure public APIs. But I'm glad that it's now at least possible to annotate them somewhat precisely.
+
+https://rednafi.com/python/annotate_args_and_kwargs/",192di4j,103,33,https://www.reddit.com/r/Python/comments/192di4j/annotating_args_and_kwargs_in_python/
+27,I just realized that Python classes give you a filter predicate for free.,"I guess I'm really late to the party, but this is a new realization for me. I have a simple class, say:
+
+```python
+class Article:
+    def __init__(self, title, language):
+        self.title = title
+        self.language = language
+
+    def is_english(self) -> bool:
+        return self.language == 'English'
+```
+
+And then in my app, I have a list of `articles`. For a technical reason, I needed to get an Iterable of just the English articles. I went through these steps in refactoring and realization:
+
+```python
+return (a for a in articles if a.is_english())
+```
+
+That definitely works, but the `a for a` thing always bugs me as unexpressive fluff. How would `filter` look?
+
+```python
+return filter(lambda a: a.is_english(), articles)
+```
+
+Ah, it's wordy because of `lambda` syntax, but I think it's more directly expressive of the purpose of the code.
+
+And I wondered, how hard would it move the lambda creation function to `Article`? And I realized, ""Wait a minute! `Article.is_english` already produces the same results as that lambda: it accepts an instance as a parameter and calls `.is_english()` on it: 
+
+```python
+return filter(Article.is_english, articles)
+```
+
+Pretty sweet. Anyone else use this to shorten down your code and make it more expressive?",19cnnon,99,55,https://www.reddit.com/r/Python/comments/19cnnon/i_just_realized_that_python_classes_give_you_a/
+28,One billion row challenge - Dask vs. Spark,"We were inspired by the [unofficial Python submission to the 1BRC](https://github.com/gunnarmorling/1brc/discussions/62) and wanted to share an implementation for Dask and PySpark: https://github.com/gunnarmorling/1brc/discussions/450  
+Dask took \~32 seconds, while Spark took \~2 minutes. Amongst the other 1BRC Python submissions, Dask is pretty squarely in the middle. It’s faster than Python’s multiprocessing (except for the PyPy3 implementation) and slower than DuckDB and Polars.  
+This is not too surprising given Polars and DuckDB tend to be faster than Dask on a smaller scale, especially on a single machine. We were actually pleasantly surprised to see this level of performance for Dask on a single machine for only a 13 GB dataset. This is largely due to a number of recent improvements in Dask like:  
+\- Arrow strings  
+\- New shuffling algorithms  
+\- Query optimization  
+Though many of these improvements are still under active development in the dask-expr project, Dask users can expect to see these changes in core Dask DataFrame soon.  
+More details in our blog post: https://blog.coiled.io/blog/1brc.html  
+",198f5vc,94,22,https://www.reddit.com/r/Python/comments/198f5vc/one_billion_row_challenge_dask_vs_spark/
+29,"In python everything's public, so I made a minimal `dir()` to better see object's custom attributes.","It's called [minimal_dir()](https://gist.github.com/sebastiancarlos/6be577452f639a9c0a9c81aa78189147). Works great to see what's in a module too.
+
+```python
+    """""" Like dir(), but minimal. 
+
+    Filters out:
+        - __*__ attributes,
+        - stdlib packages,
+        - builtins.
+
+    Example: 
+    >>> dir() # this module
+    [
+        '__all__',
+        '__builtins__',
+        ... # ten more attributes
+    ]
+    >>> minimal_dir() # now cleaner output
+    ['get_stdlib_packages', 'minimal_dir']
+    """"""
+```",19as0h5,94,12,https://www.reddit.com/r/Python/comments/19as0h5/in_python_everythings_public_so_i_made_a_minimal/
+30,Transfer YouTube History from One Channel to Another Channel Using Python,"*Transfer YouTube History from One Account to Another Account Using Python.*
+
+**Information:** There is no direct way to transport YouTube history from one account to another; you have to use Python to do it. It will take some time. - I've created a Python script that automates the transfer for you; it will take 10 seconds for each link.
+
+**Advice:** Be aware that you will need to monitor the transport because YouTube will detect unusual traffic, and it will sign out all your logged-in accounts. Therefore, I ADVISE YOU TO SAVE YOUR PASSWORD if you don't know it.
+
+**Preparation:**
+
+1. Visual Studio Code
+2. Google Chrome browser
+3. MS Excel
+
+**Exporting youtube history:** 
+
+1. Go to [https://takeout.google.com](https://takeout.google.com/)
+2. Choose the account (or brand account if you have more than one YouTube channel).
+3. Click Deselect all. Check only: YouTube and YouTube Music section (Scroll to the end).
+4. Click multiple formats: Scroll to history and change HTML to JSON, hit Ok.
+5. Click All YouTube data included: Deselect all and choose only history.
+6. Click next step.
+7. Create export.
+8. It will be sent to your email.
+9. Create an empty folder called YoutubeHistory. This folder is for running every Python script that I will provide. 
+10. Drag and drop the watch-history.json file into the YoutubeHistory folder.
+
+**Convert JSON file to txt file using python:**
+
+1. Create python script named: , save it in the YoutubeHistory folder.
+2. Load this script and click save:
+
+&#8203;
+
+    import json
+    
+    # Load the JSON data from the file with specified encoding
+    with open('watch-history.json', 'r', encoding='utf-8') as file:
+        data = json.load(file)
+    
+    urls = []
+    
+    # Extract the URLs from the JSON data
+    for item in data:
+        if 'titleUrl' in item:
+            urls.append(item['titleUrl'])
+        if 'subtitles' in item:
+            for subtitle in item['subtitles']:
+                if 'url' in subtitle:
+                    urls.append(subtitle['url'])
+    
+    # Save the URLs to a text file
+    with open('urls.txt', 'w') as file:
+        for url in urls:
+            file.write(url + '\n')
+
+Now click Ctrl+F5 to run the script. - You will get urls.txt file in the YoutubeHistory folder.
+
+**MS Excel (Organizing the history from old to new and removing duplicates):**
+
+First: You will need to remove the duplicates:
+
+1. Copy the links from urls.txt and paste in a new excel work book. 
+2. CTRL+A to select all. - Click data: Remove duplicates and hit ok.
+
+Second: You will need to order the links (Old to New):
+
+1. On column B: Number the links starting from 1.
+2. CTRL+A to select all.
+3. Click data: Sort.
+4. Choose Sort by column B & Order by largest to smallest.
+
+Third:
+
+1. Now create txt file and name it Flipped.txt in the YoutubeHistory folder.
+2. Copy the links from the excel file and paste them in Flipped.txt
+
+**Transferring the history:**
+
+1. Make sure you have selected the correct YouTube channel that you want to transfer to.
+2. Open an empty tab in Chrome tab and keep it open.
+3. Create python script named: automate\_youtube\_history.py , save it in the YoutubeHistory folder.
+4. Load this script and click save:
+
+&#8203;
+
+    import webbrowser
+    import time
+    import pyautogui
+    
+    # Read the URLs from a text file
+    with open('Flipped.txt', 'r') as file:
+        urls = file.readlines()
+        urls = [url.strip() for url in urls]
+    
+    # Open each URL in a web browser
+    for url in urls:
+        webbrowser.open(url)
+        time.sleep(10)
+        
+        # Close the current tab (you might need to adjust the coordinates)
+        pyautogui.hotkey('ctrl', 'w')  # This shortcut closes the current tab
+
+Now click Ctrl+F5 to run the script.
+
+**The process:**
+
+I recommend that you monitor the process every hour or 30 minutes because after some time, you may get logged out from all your accounts (this happened to me after 2 hours).
+
+If this occurs:
+
+1. Stop the Python script from running.
+2. Go to your watch history, and check the last video it stopped on.
+3. Remove the links that were transferred successfully and keep the others.
+4. Re-run the script.",18upgvh,88,34,https://www.reddit.com/r/Python/comments/18upgvh/transfer_youtube_history_from_one_channel_to/
+31,Bluetooth in Python,"Do people still use PyBluez?
+It's no longer being worked on, is there a package that's widely used instead or are people just using the stdlib's `socket` for communication?",197muzz,90,13,https://www.reddit.com/r/Python/comments/197muzz/bluetooth_in_python/
+32,A small collection of lesser-known statistical functions - obscure_stats,"Hello r/Python 
+
+I’m excited to share with you my new python package  called `obscure_stats`. It is a collection of lesser-known statistical  functions that are not available in the standard libraries like `scipy`,  `statsmodels`, or `numpy`.
+
+The package is still in development, but I hope you will find it useful and interesting. You can install it with  
+`pip install obscure_stats`  
+or check out the source code on [GitHub](https://github.com/glevv/obscure_stats).
+
+I would appreciate any feedback, suggestions, or bug reports.",18ubr4s,87,7,https://www.reddit.com/r/Python/comments/18ubr4s/a_small_collection_of_lesserknown_statistical/
+33,Do you prefer Mock or Dependency Injection when Unit Testing Functions in Python?,"Assume you have a function, not a class, that calls some external sources:
+
+    def main():
+        rows = get_data()
+        result = process_data(rows)
+        email_result(result)
+        return result
+
+If you wanted to add a unit test for this and avoid testing the external dependencies, you could use mock or dependency injection.
+
+**Do you have a preference? Why? Do you use one or the other depending on the situation?**
+
+----
+
+## Dependency Injection
+
+    def main(get_data_func=get_data, email_result_func=email_result):
+        rows = get_data_func()
+        result = process_data(rows)
+        email_result_func(result)
+        return result
+
+    def test_main():
+        get_data_func = lambda: [{'foo': 'bar'}]
+        email_result_func = lambda result: None
+        result = main(get_data_func, email_result_func) 
+        assert result == [{'foo': 'baz'}]
+      
+
+## Mock
+
+    def main():
+        rows = get_data()
+        result = process_data(rows)
+        email_result(result)
+        return result
+    
+    @patch('get_data')
+    @patch('email_result')
+    def test_main(get_data_func, email_result_func):
+        get_data_func.return_value = [{'foo': 'bar'}]
+        result = main()
+        assert result = [{'foo': 'baz'}]",195uk6d,78,60,https://www.reddit.com/r/Python/comments/195uk6d/do_you_prefer_mock_or_dependency_injection_when/
+34,Game Emulators in Python,"Is there a reason that c++ seems to be the most common language used to build popular retro game emulators(thinking citron, mupen,dolphin)? Why not python? Is it plausible to create an emulator purely with python?
+
+EDIT: Thank you all for the attention to this post! If any misinformation was spread, thank you for quickly downvoting. That was never my intention.
+
+EDIT2: All I can say is wow. I am absolutely amazed by the information and discussions from this post. Thank you so much to each and every one of you. What an honor this has been. Even the creator of pyboy stopped by! My two main takeaways are: start with a CHIP-8 emu proj to get an understanding, and that I really should learn rust.
+",19dit92,87,104,https://www.reddit.com/r/Python/comments/19dit92/game_emulators_in_python/
+35,"SQLAlchemy Migrations: Goodbye, Alembic. Hello, Atlas","Hey Everyone 
+
+It's been a few years since I last posted here. I wanted to share a very cool project my team has been cooking over the last couple of weeks that I think you might find interesting. 
+
+**tl;dr** 
+
+[Atlas](https://atlasgo.io) is a database schema-as-code tool (like Terraform for Databases), you can now use Atlas to automatically manage your SQLAlchemy database schemas.
+
+If you're interested in how here's [the guide](https://atlasgo.io/guides/orms/sqlalchemy). 
+
+**wait, but why**
+
+Alembic is a fine migration tool (actually way better than what's available in most languages) - so why build an alternative? 
+
+Alembic, contrary to many migration tools, does a fairly decent job of automatic migration planning. Having used it in the past, I was always annoyed by a few facts: 
+
+1. It does not cover many cases ([docs](https://alembic.sqlalchemy.org/en/latest/autogenerate.html#what-does-autogenerate-detect-and-what-does-it-not-detect))
+2. It requires a connection to a database that contains the *current schema* to 
+3. It does not support many database objects
+4. I wanted one tool for many teams (regardless of which programming lang they use)
+
+In addition, many things are out of scope for an ORM migration tool: Terraform, Kubernetes, CI for detecting risky changes, etc. 
+
+We tried to address all of these + some more with Atlas
+
+**feedback**
+
+If you try it out, I would love to get your thoughts and feedback on this.",191kuqx,77,26,https://www.reddit.com/r/Python/comments/191kuqx/sqlalchemy_migrations_goodbye_alembic_hello_atlas/
+36,I made a program that solves mazes from images!,"It was made in Python, except for one file that was written in Cython.
+
+You can read more about it here -> [https://github.com/triskj0/maze-solver](https://github.com/triskj0/maze-solver)
+
+I'll be glad some of you guys check it out, and maybe even try it for yourself! I am, of course, open to any suggestions on how to continue improving it.
+
+Have a nice day, everyone!",18vz81t,83,9,https://www.reddit.com/r/Python/comments/18vz81t/i_made_a_program_that_solves_mazes_from_images/
+37,Integer to string conversion DOS threat,"More than fifteen months ago (September 2022) the Python core developers suddenly and intentionally ~~crippled~~ limited int to string conversions [without any public discussion](https://discuss.python.org/t/int-str-conversions-broken-in-latest-python-bugfix-releases/18889) in order to protect against a DOS security threat that they had been informed of more than two years earlier.
+
+At the time, this security threat was already well-known in the security community, and was generally considered to be a mid-level threat (DOS only, not a data leak or privilege escalation). There was a lot of controversy in the Python community over the security team pushing through a *breaking change* without any community consultation or even an announcement, leaving people to discover the change for themselves after an upgrade broke their code.
+
+It has now been more than 15 months since this has been publicly disclosed. Obviously servers running fully updated Python are no longer at risk to this specific security issue, but servers running older, un-updated Pythons will still be at risk.
+
+Have there been any known examples of live exploits of this threat?",19cqumc,78,38,https://www.reddit.com/r/Python/comments/19cqumc/integer_to_string_conversion_dos_threat/
+38,is reactive programming a thing in Python?,"I am a mobile developer where everything is reactive. Before was used everywhere rxjava, and rxswift today all the native languages kotlin(android), swift(ios) have their own reactive native libraries as flow etc. 
+
+I have been working with data scientists in my last job as a data engineer and all the seniors( big institution) just ignore things as functional programming and reactive. I found out there was a library called rxPython but looks as is not used at all in 2024.
+
+I really do not get, to me reactive programming is a big thing, why in Python looks as not a pillar? Why one should renounce to an observer pattern with muscles always available, so to trigger actions on changes without callback hell?",193jv0e,72,71,https://www.reddit.com/r/Python/comments/193jv0e/is_reactive_programming_a_thing_in_python/
+39,Event Driven vs Loop Driven what's your preference?,"Streamlit is loop driven it runs every time any thing change on the app, is it performance issue for you? do you prefer Event driven framework against loop driven? ",18z08uh,75,40,https://www.reddit.com/r/Python/comments/18z08uh/event_driven_vs_loop_driven_whats_your_preference/
+40,Monads in Python,"I've been looking into functional programming , I was amazed to learn that Monads (which I thought where some kind of crazy-tricky academic haskell thing) are actually a really practical and easy design pattern.
+
+I put together this simple library to help people learn about and use Monads as an engineering pattern with python.
+
+[I had a lot of fun putting this together, even though its a super small library. Hope someone enjoys it!](https://github.com/benrutter/monads)",194zpmb,71,51,https://www.reddit.com/r/Python/comments/194zpmb/monads_in_python/
+41,Increase details of videos (from 🌱 to 🪴),"&#x200B;
+
+[Drive through rain](https://i.redd.it/nkkm6x0skm8c1.gif)
+
+I have been working on an interesting project for a while. The aim of the project is to implement some of the known ways of augmenting image details and enhance their contrast.  I would absolutely appreciate it if you checkout my code repository and share your opinion.
+
+This video is enhanced using the following code base 🐍:
+
+[Two-dimensional histogram equalization and contrast enhancement](https://github.com/Mamdasn/im2dhisteq)
+
+Full video link: [https://youtu.be/7LrzX2ZpLAQ](https://youtu.be/7LrzX2ZpLAQ)
+
+Other image/video quality/contrast enhancers that I have implemented:
+
+* [Histogram-Based Locality-Preserving Contrast Enhancement](https://github.com/Mamdasn/imhblpce)
+* [Fast Image/Video Contrast Enhancement Based on Weighted Thresholded Histogram Equalization](https://github.com/Mamdasn/imWeightedThresholdedheq)
+
+All these modules strive to make details in images/videos more prominent and remove haziness in them as much as possible.
+
+&#x200B;",18r7487,70,6,https://www.reddit.com/r/Python/comments/18r7487/increase_details_of_videos_from_to/
+42,Why hardware providers never provide APIs or code samples in Python?,"Why hardware companies never provide an API in Python ?
+
+I'm currently working on a Kiosk machine project that'll have to deal with a bill acceptor, bill despinser and some other serial port hardware.
+
+They always provide C# and/or C++ dll and Java code samples and API packages. But never anything for Python.
+
+Does anyone have a clue why is that and if it possible to somehow use those C++ dlls in my Python code.
+
+Thanks in advance.",1931p64,69,46,https://www.reddit.com/r/Python/comments/1931p64/why_hardware_providers_never_provide_apis_or_code/
+43,What is SLOW_SUM in the CPython source code?,"File: `Python/bltinmodule.c` ([link to precise  line](https://github.com/python/cpython/blob/471aa752415029c508693fa7971076f5148022a6/Python/bltinmodule.c#L2551C9-L2551C17))
+
+While reading CPython's source code I came across the `SLOW_SUM` symbol, but I couldn't find its definition. `SLOW_SUM` is referenced only once in the entire CPython source code, so I couldn't find any information on why it exists.
+
+From the source code, I understand that it's a compiler flag that disables an optimization when performing sums on numeric types through the `sum()` built-in function. However, why would you pass `SLOW_SUM` to the compiler to disable optimized sums on numeric types?
+
+I don't know if this is the right place to ask such a specific question. If it's not, can you point me to the right forum?",18vv3aa,68,7,https://www.reddit.com/r/Python/comments/18vv3aa/what_is_slow_sum_in_the_cpython_source_code/
+44,Pure Recipe is a CLI app to save or view online recipes in well-formatted markdown. No more ads!,"I am a long-time cook and aspiring  developer, so I made a command-line recipe viewer to bypass the ads and blogs that plague recipe websites. It can also save the recipes to markdown. You can even pass in a whole list of URLs to save a bunch of recipes at once. 
+
+Similar to Paprika, except it is free/open-source and you can easily save and share the recipes in markdown format.
+
+Check it out on GitHub, I would appreciate any feedback/testers:
+
+[https://github.com/atiumcache/pure-recipe](https://github.com/atiumcache/pure-recipe)",18t726b,68,23,https://www.reddit.com/r/Python/comments/18t726b/pure_recipe_is_a_cli_app_to_save_or_view_online/
+45,I made an IDE using PyQt6 [UPDATE],"&#x200B;
+
+[Editor](https://preview.redd.it/b79eg796g1ac1.png?width=1763&format=png&auto=webp&s=851ec11f48cc38652f96e4a515241dde89cf1705)
+
+[Markdown Editing](https://preview.redd.it/pi26k767g1ac1.png?width=1920&format=png&auto=webp&s=5eea5ff8f5f595a238a1010fb643183251306965)
+
+Highlighted Features:
+
+* Supports up to 30 languages w Syntax highlighting
+* auto complete
+* split pane markdown editor
+* terminal with Aura Text specific commands and also terminal history
+* plugin support
+* autocomplete (you can literally theme anything)
+
+GitHub: [https://github.com/rohankishore/Aura-Text](https://github.com/rohankishore/Aura-Text)",18wqxkm,62,9,https://www.reddit.com/r/Python/comments/18wqxkm/i_made_an_ide_using_pyqt6_update/
+46,"Hypercorn 0.16.0 released - a WSGI/ASGI server supporting HTTP 1, 2, 3 and Websockets","Hypercorn is a WSGI and ASGI server that supports HTTP/1, HTTP/2, HTTP/3, and WebSockets. It also supports asyncio, uvloop, and trio worker classes. 
+
+This release:
+ - Adds ProxyFixMiddleware to make it much easier to run Hypercorn behind a proxy with the headers pointing at the client rather than the proxy.
+ - A max_requests config that forces workers to restart when hit. This helps with memory leaks as the restart frees any leaked memory. 
+ - A max keep alive requests config that limits the requests per kept-alive connection. This mitigates the HTTP/2 rapid reset attack in the same manner as Nginx.
+ - Finally fixes many bugs.
+
+[Read more](https://github.com/pgjones/hypercorn/blob/main/CHANGELOG.rst).",18vxfyu,63,12,https://www.reddit.com/r/Python/comments/18vxfyu/hypercorn_0160_released_a_wsgiasgi_server/
+47,pytest mock,"As per today what is the most bulletproof real life python unit testing/mocking framework?
+
+I found after some research that is pytest, but for the mocks which i need to massively use, the standard (= most used library) is unittest.mock with patch or the wrapper pytest-mock?
+
+&#x200B;",18sxsig,59,28,https://www.reddit.com/r/Python/comments/18sxsig/pytest_mock/
+48,Building a decentralized key-value store on top of IRC (>= Python 3.6),"Recently, I've been working on a design for building a decentralized, permissioned key-value store across a threshold of IRC servers using channel names to store keys and topics to store values. The system can be used for a variety of purposes but my intended use is for DNS. My code is written to target Python >= 3.6 using async networking. The write up is on my blog
+
+[https://roberts.pm/irc\_kvs/](https://roberts.pm/irc_kvs/)",18qg1rq,55,9,https://www.reddit.com/r/Python/comments/18qg1rq/building_a_decentralized_keyvalue_store_on_top_of/
+49,Stockstir is a tool written in Python that lets you get stock information from any script at no cost - Version 2 is officially out!,"Hello again! A few days ago I showcased my Stockstir project which I had made a while ago. You can refer to that thread [here](https://www.reddit.com/r/Python/comments/18sxqsc/stockstir_is_a_python_project_that_lets_you_get/).
+
+V2 is out! You can take a look at the [documentation](https://stockstir.readthedocs.io/en/latest/index.html) for up-to-date information on the new functions, enhancements, and fixes in the project. 
+
+Also, the project link is here: [Stockstir Link](https://github.com/PatzEdi/Stockstir)
+
+As far as additions and suggestions which were made on the previous thread, Stockstir V2 now has a complete fail-safe system that uses more than one provider. It also has initial integration of an Alpha Vantage API (to be further developed still, now it is just an initial integration), and new options to gather prices and other stock info through CNBC and their JSON format API (Thank you to [Gr1pp717](https://www.reddit.com/user/Gr1pp717/) for that information!).
+
+As far as the quick usage, nothing has changed:
+
+```
+import Stockstir
+
+price = Stockstir.getSinglePrice(""ticker/stockSymbol"")
+
+print(price)
+```
+
+With the new provider system, the default provider is still CNBC. However, you can set a provider manually (There are three as of now) like so:
+
+```
+from Stockstir import Providers
+
+Providers.provider_number = 1 # Here, you can put any number that is between 0 and 2, as there are three providers now. The default remains 0.
+```
+
+The new fail-safe system automatically picks other providers in case one fails, bringing more reliability to the library as a whole.
+
+If you want to manually check if providers are working, you can do this:
+
+```
+from Stockstir import Providers
+
+Providers.runProviderChecks()
+```
+
+Hope you enjoy!
+
+Edit: Some suggestions/improvements have already been suggested in one of the comments below, thank you so much for that information, super useful! Here is the [link of the improvements that will come soon to Stockstir V2](https://www.reddit.com/r/Python/comments/18uuyjr/comment/kfnju1d/?utm_source=share&utm_medium=web2x&context=3)",18uuyjr,50,15,https://www.reddit.com/r/Python/comments/18uuyjr/stockstir_is_a_tool_written_in_python_that_lets/
+50,Polars in Aggregate: A small subselection on where we have been working on.,See the blog here: https://pola.rs/posts/polars\_in\_aggregrate-0.20/,18z2wp7,54,8,https://www.reddit.com/r/Python/comments/18z2wp7/polars_in_aggregate_a_small_subselection_on_where/
+51,Jake: A Free Alternative to Linktree Using GitHub Pages,"Hello,
+
+I wanted to share a new Python project I've been working on called Jake. It's an alternative to popular link aggregator services like Linktree and OneLink. Jake leverages the power of GitHub Pages to provide you with a hassle-free way to create your one-link website. The best part? It won't cost you a dime!
+
+With Jake, you can easily showcase all your important links and content in one central hub, neatly organized and easily accessible. Your website will have a sleek URL in the format of ""username.github.io,"" giving it a professional touch.
+
+Jake is completely written in Python and uses the \`tinyhtml\` library to generate static HTML websites. Simply fill in the \`data.toml\` file with your information, and Jake will automatically build and deploy your website to GitHub Pages using a GitHub action.
+
+To give you a taste of what Jake can do, I've prepared a demo project for you to explore. Just visit [https://thevahidal.github.io/jake](https://thevahidal.github.io/jake) and see the potential for yourself.
+
+If you're interested in contributing or want to dive deeper into the project, you can find the Jake repository on GitHub at [https://github.com/thevahidal/jake](https://github.com/thevahidal/jake). I welcome all contributions, feedback, and bug reports. Your input will help shape the future of Jake and make it even better.
+
+Thank you for taking the time to read about Jake. I can't wait to see what we can achieve together.
+
+Best regards,  
+Al",18tkf7e,52,22,https://www.reddit.com/r/Python/comments/18tkf7e/jake_a_free_alternative_to_linktree_using_github/
+52,"2,000 free sign ups available for the ""Automate the Boring Stuff with Python"" online course. (Jan 2024)","If you want to learn to code, I've released 2,000 free sign ups for my course following my Automate the Boring Stuff with Python book (each has 1,000 sign ups, use the other one if one is sold out): 
+
+*The sign ups are all used up, but you can still watch all the videos for free. Read below!
+
+~~https:// udemy. com/course/automate/?couponCode=JAN2024FREE~~
+
+~~https:// udemy. com/course/automate/?couponCode=JAN2024FREE2~~
+
+If you are reading this after the sign ups are used up, you can always find [the first 15 of the course's 50 videos are free on YouTube if you want to preview them.](https://www.youtube.com/watch?v=1F_OgqRuSdI&list=PL0-84-yl1fUnRuXGFe_F7qSH1LEnn9LkW) YOU CAN ALSO WATCH THE VIDEOS WITHOUT SIGNING UP FOR THE COURSE. All of the videos on the course webpage have ""preview"" turned on. Scroll down to find and click ""Expand All Sections"" and then click the preview link. You won't have access to the forums and other materials, but you can watch the videos.
+
+**NOTE: Be sure to BUY the course for $0, and not sign up for Udemy's subscription plan. The subscription plan is free for the first seven days and then they charge you. It's selected by default. If you are on a laptop and can't click the BUY checkbox, try shrinking the browser window. Some have reported it works in mobile view.**
+
+**I'm also working on another Udemy course** that follows my recent book ""Beyond the Basic Stuff with Python"". So far I have [the first 15 of the planned 56 videos done. You can watch them for free on YouTube.](https://www.youtube.com/watch?v=kSrnLbioN6w&list=PL0-84-yl1fUmeV_2bBSguF_S0TVZk8wow&index=1)
+
+**Frequently Asked Questions:** (*read this before posting questions*)
+
+* This course is for beginners and assumes no previous programming experience, but the second half is useful for experienced programmers who want to learn about various third-party Python modules.
+* If you don't have time to take the course now, that's fine. Signing up gives you lifetime access so you can work on it at your own pace.
+* This Udemy course covers roughly the same content as the 1st edition book (the book has a little bit more, but all the basics are covered in the online course), which you can read for free online at https://inventwithpython.com
+* The 2nd edition of Automate the Boring Stuff with Python is free online: https://automatetheboringstuff.com/2e/
+* I do plan on updating the Udemy course, but it'll take a while because I have other book projects I'm working on. If you sign up for this Udemy course, you'll get the updated content automatically once I finish it. It won't be a separate course.
+* It's totally fine to start on the first edition and then read the second edition later. I'll be writing a blog post to guide first edition readers to the parts of the second edition they should read.
+* **You're not too old to learn to code. You don't need to be ""good at math"" to be good at coding.**
+* Signing up is the first step. Actually finishing the course is the next. :) [There are several ways to get/stay motivated.](https://www.reddit.com/r/learnprogramming/wiki/faq#wiki_how_can_i_get.2Fstay_motivated_to_learn_programming.3F) I suggest getting a ""gym buddy"" to learn with. Check out /r/ProgrammingBuddies",18ziobn,51,8,https://www.reddit.com/r/Python/comments/18ziobn/2000_free_sign_ups_available_for_the_automate_the/
+53,A copy-and-patch JIT compiler for CPython,,18rh34y,49,4,https://github.com/python/cpython/pull/113465
+54,Django python backend for a dating social app 🐍,"Good project to play around and explore Django REST features
+
+&#x200B;
+
+Repo -> [https://github.com/damianstone/toogether-backend](https://github.com/damianstone/toogether-backend)
+
+Frontend repo -> [https://github.com/damianstone/toogether-mobile](https://github.com/damianstone/toogether-mobile)
+
+&#x200B;
+
+**Some Django REST features used**
+
+\- Channels and websockets
+
+\- Geolocation
+
+\- Pagination
+
+\- Auth token
+
+\- ModelViewSets
+
+&#x200B;
+
+[Figma screen of the app functionalities](https://preview.redd.it/s1yf2ykxmw8c1.png?width=6801&format=png&auto=webp&s=c80e7671cc5430772830b6466cc3dd2f3276c290)
+
+**App features**
+
+\- login / register using auth token
+
+\- user profile
+
+\- matching algorithm
+
+\- swipe group and single profiles
+
+\- create group profiles using an invitation code
+
+\- group chat and 1-1 chats
+
+\- report and block
+
+\- recovery password
+
+&#x200B;",18sbk1v,47,20,https://www.reddit.com/r/Python/comments/18sbk1v/django_python_backend_for_a_dating_social_app/
+55,DocFlow - Document Management API,"🚀 Excited to announce the release of DocFlow - a Document Management API!
+
+I have been working on this project from quite some tie now. And learnt a lot. Writing this post, just to share how year ended for me.
+
+DocFlow is build using u/FastAPI, PostgreSQL, AWS S3, and Docker. It provides document's Upload, Download, Organization, Searching, Versioning, Sharing, Access Control List, Deletion, Archiving, Authentication and Authorization.
+
+The complete documentation of the API and ways to test and run DocFlow is mentioned on the GitHub Repository. 🖇️ [Here](https://github.com/jiisanda/docflow)
+
+📩 I invite you to the repo, to do a code review, suggest changes and collaborate over the Discussions of [DocFlow](https://github.com/jiisanda/docflow/discussions).
+
+Happy Coding 🙆‍♂️!
+
+**#DocFLow** **#DocumentManagement** **#API** **#release** **#github** **#fastapi** **#aws** **#docker** **#postgresql** **#awsservices** **#python**
+
+[DocFlow](https://preview.redd.it/nlqs5ypm0o9c1.png?width=500&format=png&auto=webp&s=bf8aa96aa81771c6208703844c4f9e004d7259e9)",18vcjrw,48,10,https://www.reddit.com/r/Python/comments/18vcjrw/docflow_document_management_api/
+56,Why Black in PSF,"I just noticed that black is now part of the GitHub PSF organisation!  When did this happen and why?  I see requests there too but not httpx or aiohttp?  What’s the criteria for the PSF to adopt a library?  If anything I wish blue would be the official not black given it does not break doctests, and is written by FLUFL!
+
+https://github.com/psf/black",195jwde,46,50,https://www.reddit.com/r/Python/comments/195jwde/why_black_in_psf/
+57,I made a Django webapp to create memorial pages quickly and easily,"Hi all!
+
+After several months of having no ideas to launch or work on, I'm finally launching a small SaaS to create memorial pages for our beloved ones who have passed away.
+
+To be honest, I got this idea in the worst scenario. Here's the story...
+
+Recently, one of my family members passed away, and as a software engineer, I felt compelled to use my Python / Django skills to create something meaningful in his honor.
+
+I discovered nice platforms for creating memorial pages, like Cake, Forever Missed, Much Loved, and so forth. However, given my mental state at the time, I felt there were too many steps and overwhelming options to get this done quickly.
+
+So, I turned to **carrd.com** and created a very basic page with a link to send emails to my wife and me, where you could share condolences, support messages, book recommendations, and so forth.
+
+After that, I thought, ""Why not create a platform to build these kinds of pages in just one step and start receiving support from friends and family without feeling pressured to answer the messages?""
+
+And after two weeks, I created [easytribute.com](http://easytribute.com/)
+
+Source code [https://github.com/mariorojas/easytribute](https://github.com/mariorojas/easytribute)
+
+Feel free to take a look, and thank you all for your support and feedback.",18sffil,42,9,https://www.reddit.com/r/Python/comments/18sffil/i_made_a_django_webapp_to_create_memorial_pages/
+58,Building automation workflows using Google Sheets & the Python gspread client,"I've been working on a couple different startups recently and found myself constantly needing to build automations on top of Sheets. In a nutshell, I would collect some data into a sheet and then need to iterate over the data and perform an action on each row (like call a 3rd party API and clean the data before I could load it into my actual database). I was able to solve this by combining Google's Sheets API with the open source [gspread library](https://docs.gspread.org/en/latest/). This has been an absolute lifesaver for me and so I thought I'd share with this community.  
+I wrote a quick blog post on it which you can find [here](https://www.prashanthselvam.com/blog/google-sheets-automation) but also happy to elaborate on it here if people find helpful. I'd never heard of this library before and I'm not affiliated with it in anyway but just wanted to share in case it helps others.",19dc3hd,44,6,https://www.reddit.com/r/Python/comments/19dc3hd/building_automation_workflows_using_google_sheets/
+59,Best practices for library configuration management,"Hi - I'm looking for any articles on modern library configuration management. To be clear, I am publishing a library, and want my users to be able to easily configure it using e.g. pyproject.toml.
+
+This seems a bit tricky to google, since almost everything is how to \*set up\* a project using pyproject.toml, not how to add your own config to it for other users to specify/how to user that in your library effectively. I figure I can do source code diving in some popular projects, but if anyone is aware of resources I would appreciate it.",196sd4c,41,24,https://www.reddit.com/r/Python/comments/196sd4c/best_practices_for_library_configuration/
+60,Unexpected bytes behavior when referencing a single byte,"This may be one of those ""well yeah, dummy"" moments but I was thrown for a loop so I thought I'd share this one and see what others think.
+
+I was parsing a bytes object and referenced a single byte. I expected the value I referenced to also be a bytes object with length 1. But it was an integer. This is when I learned that bytes objects behave more like a list than a string.
+
+    bytestring = b'\x08\xd7\x94\x82\xca'
+    bytestring[0] == 8
+    bytestring[:1] == '\b08'
+    
+    _list = [1, 2, 3, 4, 5]
+    _list[0] == 1
+    _list[:1] == [1]
+    
+    _string = ""12345""
+    _string[0] == ""1""
+    _string[:1] == ""1""
+
+Very quirky and not at all what I was expecting. I'm surprised that Python would implicitly cast a referenced byte as an int.",1967vgy,42,12,https://www.reddit.com/r/Python/comments/1967vgy/unexpected_bytes_behavior_when_referencing_a/
+61,Running python on air-gapped systems,"This post documents how to package and run python libraries on a computer with no internet access. There are simpler solutions, but this one worked with scientific python libraries (torch, scipy etc.)
+
+Link to post: https://iahmed.me/post/python-air-gapped/",1961v23,36,28,https://www.reddit.com/r/Python/comments/1961v23/running_python_on_airgapped_systems/
+62,Advanced Magic Methods in Python To Customize Classes Conveniently,"Magic methods, also named special methods or dunder methods, whose name starts and ends with a double underscore, offer powerful, convenient ways to customize Python classes, enhance functionality, and simplify our coding experience.
+[This article](https://medium.com/techtofreedom/9-advanced-magic-methods-in-python-to-customize-classes-conveniently-a1f50fa4b53e?sk=7de16950f316b56d1dfb351d8aadc2d8) will delve into the 9 most useful and ingeniously designed ones of them.",191h6ys,42,18,https://www.reddit.com/r/Python/comments/191h6ys/advanced_magic_methods_in_python_to_customize/
+63,My proof-of-concept record type,,18sav2w,39,9,https://snarky.ca/my-proof-of-concept-record-type/
+64,Financial-Analyzer CLI App: an argument for use,"Hello r/Python,
+
+With Mint closing as an option for many to track personal finances and some renewed interest on my end for finance app.......
+
+I'm writing this post on this Christmas in regards to a [Github project](https://github.com/andersbandt/Financial-Analyzer/blob/main/README.md) based around financial analysis. The app in function is written in Python and is meant to analyze one's personal finances, with a main window page looking like so
+
+&#x200B;
+
+https://preview.redd.it/8cw1xyn0ek8c1.png?width=836&format=png&auto=webp&s=4fc99bdebe4b2e6cefe2910dbb3e22303e29648e
+
+The application analysis your financial spending based on data from a directory of monthly statements (typically in .csv format) from various credit cards / banks one has. It is quite easy for one to pull this data from any account like Apple Card, Venmo, Wells Fargo, U.S. Bank, etc.
+
+So each month 15-20 mins of effort is required from user to get data, but it's not that hard.
+
+My analysis on spending is performed against a preset ""tree of categories"" which allows one to get quite granular with spending data.
+
+&#x200B;
+
+[a printout of my personal category tree](https://preview.redd.it/e7zo4qrydk8c1.png?width=794&format=png&auto=webp&s=bfdca5b52bb4c3600a37f81eef16e1438bc24284)
+
+This project was brought up in [this Reddit post](https://www.reddit.com/r/Python/comments/zrv4hx/would_anyone_be_interested_in_collaborating_on_a/) when the main focus was on a GUI based version of the app (originally used Tkinter library as GUI framework). However, it is **my belief** that a CLI based version of this application is best for an open-source direction. Coding for a GUI with a full-fledged API like Flask or Django and a proper front-end like React is **not worth the time**. CLI applications (like the Linux bash shell) are perfectly functional, and honestly better than most clunky GUI applications for their linearity)
+
+My personal progress on this project has increased exponentially since switching to a CLI based application. So with Mint closing their doors feel free to try and get this app running on your machine. Likely you will encounter program bugs. But they should be easily fixable.
+
+I also setup a Discord about a year ago for discussion. Check it out [here at this Discord link](https://discord.gg/WEPzzJhs)",18qzi6d,36,14,https://www.reddit.com/r/Python/comments/18qzi6d/financialanalyzer_cli_app_an_argument_for_use/
+65,toc - Generate a table of contents from the comments of a file,"Hi all!
+
+I am sharing with the world a CLI utility I use often.  
+`toc` is like a `tree` for file contents, and it made me organize my code base in a more structured way.
+
+I got positive feedback from some friends, so I decided to make it public.
+
+Give it a try, I'd love to hear your opinions.
+
+
+
+[PyPI](https://pypi.org/project/tableofcontents/)
+
+[Repo](https://github.com/AlphaJack/toc)",19cf55k,37,17,https://www.reddit.com/r/Python/comments/19cf55k/toc_generate_a_table_of_contents_from_the/
+66,Building BLE web application with Python Flask and BleuIO,"A tutorial on how to build BLE web application easily with Python FLask using pyserial
+
+[https://www.bleuio.com/blog/building-ble-web-application-with-python-flask-and-bleuio/](https://www.bleuio.com/blog/building-ble-web-application-with-python-flask-and-bleuio/)",199lk6h,36,7,https://www.reddit.com/r/Python/comments/199lk6h/building_ble_web_application_with_python_flask/
+67,Statically enforcing frozen data classes in Python,"Wrote a quick TIL on how to statically enforce frozen data classes in Python. Had to resort to crowd sourcing & good ol' stackoverflow to figure this one out since LLMs were of no help:
+
+https://rednafi.com/python/statically_enforcing_frozen_dataclasses/",18ybepc,32,24,https://www.reddit.com/r/Python/comments/18ybepc/statically_enforcing_frozen_data_classes_in_python/
+68,The ideal REST API client in python,"A while ago I needed a client for an API I was using, so I tried to generate it with one of the available generators for python.
+
+Unfortunately the API required standard but uncommon Accept header with a version parameter, and the generator didn't support it at the time.
+
+I tried to fix it, but the code was so complex I couldn't hope to comprehend it in a reasonable time. The problem, in my view, was that the generator outputted a full client that used bare requests to make HTTP calls, parse input and output parameters and bodies.
+
+I thought there's a lot of room for improvement. Such common code should be in a library, and the generator should generate the model for object schemas, and ideally function declarations for operations, and the rest should be handled by a runtime library.
+
+Mid-2022 I started working on [lapidary](https://github.com/python-lapidary/lapidary/), and at the time I was focusing on the generator, which generated model and scaffolding for operation functions, while the runtime library was parsing the OpenAPI document and processing the input and output based on the memory model of the OAI document. It was working fine for simple cases.
+
+A few months ago I've returned to the project, but this time I was focusing more on the runtime library, or more specifically, on how to represent the remote service as python code. typing.Annotated comes to the rescue. If FastAPI can parse request based on annotated function declaration, then client code should be able to generate it.
+
+So the current version of an example API client made with lapidary looks similar to a FastAPI function, only without a body. The entire functionality is done by the library based on the function annotations.  
+
+
+    class Client(ClientBase):
+    @GET('/strings')
+    async def get_strings(self: ty.Self) -> ty.Annotated[
+        ty.List[str],
+        Responses({
+            '200': {
+                'application/json': ty.List[str]
+            }
+        })
+    ]:
+        pass
+
+    @POST('/login')
+    async def login(self: ty.Self,
+                    ) -> ty.Annotated[
+        httpx.Auth,
+        Responses({
+            '200': {
+                'application/json': ty.Annotated[
+                    AuthResponse,
+                    APIKeyAuth(
+                        'header',
+                        'Authorization',
+                        'Token {body.api_key}'
+                    ),
+                ]
+            }
+        })
+    ]:
+        pass
+
+
+Anyway, I think I went a little bit overboard with the declarative approach, and the response handling could be moved to the function body.
+
+&#x200B;
+
+What do you think, is there a need for such idea?",194789b,35,9,https://www.reddit.com/r/Python/comments/194789b/the_ideal_rest_api_client_in_python/
+69,Astronomy / Space Science: Working on meteor data,"Hey everyone,
+
+I started with a new ""Space Science with Python"" tutorial and would like to share it with you. It is about tiny dust particles entering our atmosphere: meteors.
+
+Thankfully, the International Astronomical Union (IAU) provides free-accessible datasets with almost 1 Million meteors. These data contain physical and dynamical properties like the brightness of the meteor, its original orbit around the Sun and the appearance coordinates on the sky.
+
+If you are interested, there data is here: [https://ceres.ta3.sk/iaumdcdb/home/catalog/video](https://ceres.ta3.sk/iaumdcdb/home/catalog/video)
+
+But if you are not that deep into this space-scientific field: I started to create some Jupyter Notebooks to work with the data. The objective of my tutorial: first, understanding the meteor physics and then I'll create a Variational Autoencoder based meteor shower detection model.
+
+Anyway, if you are interested, here is the code: [https://github.com/ThomasAlbin/Astroniz-YT-Tutorials/tree/main/Project-Meteor-Science](https://github.com/ThomasAlbin/Astroniz-YT-Tutorials/tree/main/Project-Meteor-Science)
+
+And the corresponding tutorial playlist, and yes, my videos are not fancy YouTube professional productions, I am just a guy sharing his passion with the world: [https://www.youtube.com/watch?v=5FK3dTrW\_Fc&list=PLNvIBWkEdZ2g3ifrQ6O06fkeetf8e1NDg](https://www.youtube.com/watch?v=5FK3dTrW_Fc&list=PLNvIBWkEdZ2g3ifrQ6O06fkeetf8e1NDg)
+
+Cheers,
+
+Thomas",1905n4g,35,7,https://www.reddit.com/r/Python/comments/1905n4g/astronomy_space_science_working_on_meteor_data/
+70,str split iterator. How to release,"I work a lot on limited memory systems. In such an environment  iterators are always better than lists or tuples. 
+
+There has long been discussion on python forums about a string split iterator.
+
+`for word in isplitstr(astring, splitter):`
+
+`print(word)`
+
+Well I've gone an implemented such a thing. I'd like to release it. 
+
+I should probably have written a PEP proposing what it does. But were I to (and it has been tried in the past) no decision is ever made as the discussion gets bogged down in ideological discussions about how best to implement it.
+
+So what happens if an anarchist like me just bypasses all the discussions and releases my version?
+
+Since os.path is not available on micropython: isplitstr has some functionality to normalise and reduce paths assuming the split is on char '/'
+
+`isplit = isplitpath(apath)`
+
+`isplit[x:y]           # lazy split returning list`
+
+`isplit.pathnormed()   # same as os.path.normpath. Returns list`
+
+`isplit.pathjoin[x:y]  # join on lazy slice of pathnormed(). Returns str`
+
+`isplit.slowlen()      # Effectively len() calculated by iterating and counting`
+
+&#x200B;",195pahw,30,43,https://www.reddit.com/r/Python/comments/195pahw/str_split_iterator_how_to_release/
+71,I made a video showcasing the projects in 2023 using Python and Pygame!,"You can watch it here - [https://youtu.be/o6ISmnLqVDQ](https://youtu.be/o6ISmnLqVDQ)
+
+Source code for most of the project is available on my [GitHub page](https://github.com/robomarchello)
+
+Happy New Year everyone!
+
+And this is one of the projects:
+
+[pressure soft body simulation](https://i.redd.it/872nmxhrts9c1.gif)",18vtkcs,28,4,https://www.reddit.com/r/Python/comments/18vtkcs/i_made_a_video_showcasing_the_projects_in_2023/
+72,Python GUI framework for windows applications and embedded systems.,"A few months ago I saw someone posting maybe here or in another subreddit about a Python framework for making GUIs. I distinctly remember that it can be used to make guis for embedded systems as well as something similar to windows apps.   
+
+
+Unfortunately, I forgot the name of it and can't seem to find that post anywhere. Does anyone have any clues as to what this framework is called?
+
+&#x200B;
+
+Many thanks\~",18xav2l,29,24,https://www.reddit.com/r/Python/comments/18xav2l/python_gui_framework_for_windows_applications_and/
+73,Go to variable names?,"Do you have go-to variable names, say in scratch code?
+
+For instance, mine are: *p* for a Path instance from pathlib module,  *d* for dictionary, *w* for output read within ‘open’ context, *s* for a string, *i* for index, like first element of tuples generated by ‘enumerate’ generator, and, of course …, *df* for instance of DataFrame object of pandas module. 
+
+How about yours?
+
+Edit: corrected spelling mistake",19bzs8o,26,129,https://www.reddit.com/r/Python/comments/19bzs8o/go_to_variable_names/
+74,RecoverPy 2.1.5: Python file recovery tool,"&#x200B;
+
+https://i.redd.it/t1foxzpbvg9c1.gif
+
+**Github**: [https://github.com/PabloLec/RecoverPy](https://github.com/PabloLec/RecoverPy)
+
+Hey everyone!
+
+I'm here to share something I've been working on for nearly three years now, RecoverPy, and its new 2.1.5 version. It's a nifty tool that can really be a lifesaver when you've accidentally deleted or overwritten files. It works its magic by conducting a text-based search to find the lost data.
+
+It sports a TUI built with Textual. I found it to be quite enjoyable to use and it seems many others agree, given its rise as one of the most (or the most?) popular TUI libraries in Python, despite still being in beta.
+
+Since its creation, RecoverPy has gone through quite a transformation. It's integrated lots of feedback from its user community, improved many aspects to enhance the user experience, and even underwent almost a full rewrite to switch up the TUI library in its second version. Essentially, it uses the strength of grep and dd to sift through partition blocks, giving you a user-friendly way to sift through the results.
+
+Interestingly, it found a niche not only among individuals looking to recover files but has also piqued interest in the hacking scene, which was a bit of a pleasant surprise for me. It seems the tool lends itself well to that sphere too.
+
+I manage to chip away at it from time to time, given that my free moments are becoming a bit of a rarity these days. It still has room to grow, and if anyone here feels like contributing, I'm more than open to collaborations. Your PRs would certainly be welcome!
+
+Feel free to give it a glance, and if you find it interesting or useful, a star on the repository would be greatly appreciated.",18uknqm,27,4,https://www.reddit.com/r/Python/comments/18uknqm/recoverpy_215_python_file_recovery_tool/
+75,"Dask Demo Day: Apache Beam on Dask, expressions for Dask Array, and 1BRC for Dask vs Spark","Today's talks:
+
+\- Apache Beam `DaskRunner`  
+\- Array expressions  
+\- One billion row challenge in Dask vs. Spark
+
+Recording available on youtube: https://www.youtube.com/watch?v=wkQzVNQdgW0
+
+Each month folks from the Dask community give short demos that show off ongoing and/or lesser-known work. Hopefully this helps elevate some of the great work people do.
+
+If you're interested in presenting, comment on this github issue with a brief (a couple sentences) description: https://github.com/dask/community/issues/307",19a54s2,26,2,https://www.reddit.com/r/Python/comments/19a54s2/dask_demo_day_apache_beam_on_dask_expressions_for/
+76,Build CLIs as wheels,"I built a small tool that can be used as CLI or SDK. It allows you to distribute any binary (preferably CLIs) as a wheel.
+
+This way you can easily reference and integrate external tools in your scripts and tooling. Simply installing a python package.
+
+It also provides you with a wrapper package so you can use it right away with subprocess wrapped inside.
+
+Working example can be found in https://github.com/timo-reymann/deterministic-zip :)
+
+
+https://github.com/timo-reymann/python-binary-wheel-builder",191nvo1,27,8,https://www.reddit.com/r/Python/comments/191nvo1/build_clis_as_wheels/
+77,I made a Python Library for finding business e-mails and e-mail validation [MailScout],"I decided to fill up my free time by converting an internal tool I made into a Python library. 🤝
+
+This is my first submission on r/python. Hope I'm not breaking any rules.
+
+**Features:**
+
+* Generate and find potential business email addresses based on provided names and common patterns.
+* Check the SMTP deliverability of email addresses. (E-mail Validation)
+* Detect catch-all domains.
+* Normalize and transliterate names into email-friendly formats.
+* Bulk email finder for multiple domains.
+
+**Installation**
+
+    pip install mailscout
+
+**Usage**
+
+    from mailscout import Scout
+    scout = Scout()
+    
+    names = [[""Jeff"", ""Winger""], [""Ben Cheng""], [""Łukas Nowicki""]]
+    domain = ""microsoft.com""
+    
+    emails = scout.find_valid_emails(domain, names)
+    
+    print(emails)
+    # ['jeff@microsoft.com', 'ben.cheng@microsoft.com', 'bencheng@microsoft.com', 'ben@microsoft.com', 'lukas@microsoft.com']
+
+If you don't provide any names, Mailscout will use brute force on common prefixes to find email addresses.
+
+    domain = ""microsoft.com""
+    emails = scout.find_valid_emails(domain)
+    print(emails)
+    # ['support@microsoft.com', 'team@microsoft.com', 'marketing@microsoft.com', 'accounts@microsoft.com', 'help@microsoft.com', 'finance@microsoft.com', 'manager@microsoft.com', 'events@microsoft.com', 'community@microsoft.com', 'feedback@microsoft.com', 'dev@microsoft.com', 'developer@microsoft.com', 'status@microsoft.com', 'security@microsoft.com']
+
+**Full Documentation:**
+
+[Check the MailScout Github page](https://github.com/batuhanaky/mailscout)",196m3zx,26,22,https://www.reddit.com/r/Python/comments/196m3zx/i_made_a_python_library_for_finding_business/
+78,Simple League of Legends solo queue simulator made in Python,"Hello everyone!
+
+This is my Python project I've been working on for the past few months just as a break from doing all the data science and school related stuff. It began as a console only script, but I wanted it to become a bit more user friendly with a visual interface. The final result is a mix of a bunch of different things I wanted to learn about Python + my passion for the game :). Its built primarily with customtkinter, some tkinter and a few different libraries.  
+
+
+In game there is a rank system with a range from 0 to 2799 league points (LP). Every 100 LP you gain you climb up a division, every four divisions (400 LP) you climb one rank up, starting from the lowest division (IV). With every game you can either win or loose, resulting in gained or lost LP. The whole system in game is very complicated and has lots of variables, so In my program simplified it to (+20LP to +25LP) gained ""per win"", and (-18LP to -22LP) lost ""per loss"", which theoretically should be an average persons experience while playing lots of games per season.
+
+&#x200B;
+
+All in all it simulates your rank gained based on your current rank, winrate per game and how many games you want to play. It can also pull your usernames rank and LP data with an API from Riot Developer Portal if you have it in a .env file within the folder. All the screenshots are at my github link below.  
+
+
+[https://github.com/Manhatai/LeagueOfLegends\_SoloQ\_Simulator](https://github.com/Manhatai/LeagueOfLegends_SoloQ_Simulator)  
+
+
+So, what do you guys think?  Im open to all criticism and suggestions as I keep trying to get better.",19aljup,23,10,https://www.reddit.com/r/Python/comments/19aljup/simple_league_of_legends_solo_queue_simulator/
+79,Python library to watch a directory for new files,"I created this very simple Python library to watch a directory for new files.  While many of the ""directory watching"" packages are focused on watching for file changes, this is focused on watching for new files.
+
+Intended for use cases such as reading CSV files into a database upon creation in a directory.
+
+You can listen for new files in a directory with a simple for loop. The loop will simply block until a new file is found in the directory. Once this occurs any arbitrary code can be run in the loop body using the file path.
+
+    for new_file_path in listen_with_history(Path(""test_dir""))
+    
+        print(f""{new_file_path}"")
+
+Would be great to hear any feedback on the design or use case.
+
+[https://github.com/noahridge/python-directory-watch](https://github.com/noahridge/python-directory-watch)",195yfyx,24,11,https://www.reddit.com/r/Python/comments/195yfyx/python_library_to_watch_a_directory_for_new_files/
+80,Draw2Img: draw on canvas to instantly create amazing graphics & images,"This is an open source web UI for interactive text-guided image to image generation via SDXL-Turbo, the backend is a multi-threaded HTTP + Websocket server written in Python.
+
+You might be interested in this project if:
+
+- you or friends/family/children are interested in learning the basics of generative art, but don't have the time/patience/skills for a1111/comfy/etc
+
+- you have little to no artistic skill (or maybe a lot!), and simply want to create good looking custom graphics for your website or project, with minimal effort and time
+
+- you want to quickly & creatively iterate on 512x512 base images as the first step of a more advanced workflow (eg upscaling, diffusion, etc)
+
+GitHub link: [https://github.com/GradientSurfer/Draw2Img](https://github.com/GradientSurfer/Draw2Img)",194a4z4,23,2,https://www.reddit.com/r/Python/comments/194a4z4/draw2img_draw_on_canvas_to_instantly_create/
+81,PNLS: An offensive tool that captures and displays SSIDs from device's Preferred Network List in the nearby vicinity.,"Hi everyone,
+
+I was tinkering with this idea for a while and it's finally presentable. PNLS is an open-source tool that captures and displays SSIDs from device's Preferred Network List. This is achieved by sniffing out Probe Requests in the nearby vicinity which are then parsed for SSID and other information, and finally propagated to the web UI. 
+
+The tool is implemented on the Raspberry Pi. More details about the project, its architecture and the technologies it uses is available on the GitHub ([https://github.com/AleksaMCode/Preferred-Network-List-Sniffer](https://github.com/AleksaMCode/Preferred-Network-List-Sniffer)).
+
+Because the backend part is written using Python I would appreciate feedback, but more importantly I would love some suggestions on how the code and this tool could be improved.",18qi3u0,21,6,https://www.reddit.com/r/Python/comments/18qi3u0/pnls_an_offensive_tool_that_captures_and_displays/
+82,CRAP - Clear Redundant Added Packages,"[https://github.com/ValdonVitija/crap](https://github.com/ValdonVitija/crap)
+
+Automatically clear redundant packages from virtual environments in python 🐍📦🗑️.",18tqu9m,22,12,https://www.reddit.com/r/Python/comments/18tqu9m/crap_clear_redundant_added_packages/
+83,I made a D&D point buy program in Python,"I was messing around with the idea of creating a D&D fangame in Ren'Py and thought this might be a fun place to start. I don't think I wrote the most efficient code (very open to suggestions/critique! but not too mean or i will be sad) but it works in all respects, and I think I covered all my bases. It'll be a good place to refer back to when coding my game I think!
+
+The code: [https://github.com/quinnathy/pointbuy](https://github.com/quinnathy/pointbuy)",195tbya,21,17,https://www.reddit.com/r/Python/comments/195tbya/i_made_a_dd_point_buy_program_in_python/
+84,🍀 How to Create Stunning Music Posters in Seconds: Introducing BeatPrints!,"&#x200B;
+
+https://preview.redd.it/2ae0jplk91ac1.png?width=1280&format=png&auto=webp&s=d6c6b7276f42dac753eb309e47fa6b12f49a1672
+
+**Ever wondered how to create music posters like the ones you see on Pinterest?** 🎨
+
+Maybe you've wanted something aesthetic to jazz up your Instagram stories or noticed your walls looking a tad empty? Perhaps you're the collector type or simply love decking out your space with artistic vibes? Look no further—introducing BeatPrints! 
+
+🎨 **What's BeatPrints?**
+
+BeatPrints is your one-stop tool for crafting eye-catching music posters that stand out! It's your gateway to generate custom, beautiful posters that capture the essence of your favorite music track from Spotify.
+
+**🤷 Why you want to use it?** 
+
+* **Ease of Use:** Say goodbye to complex design software—BeatPrints makes poster creation straightforward and fun!
+* **Aesthetic Appeal:** Create posters perfect that's for Instagram, Pinterest, or maybe sprucing up your living space.
+* **Versatility:** Whether you're a collector, a decorator, or just love stylish visuals, BeatPrints has you covered.
+
+🔗 **GitHub Project Link:** [BeatPrints on GitHub](https://github.com/TrueMyst/BeatPrints)
+
+Let BeatPrints transform your favourites music tracks into stunning posters! 🎨✨",18wq7ru,21,2,https://www.reddit.com/r/Python/comments/18wq7ru/how_to_create_stunning_music_posters_in_seconds/
+85,I created a program to align thousands of selfies for daily picture videos!,"I started taking pictures 'everyday' in 2019 after seeing [Hugo's famous video](https://www.youtube.com/watch?v=65nfbW-27ps), but after aligning \~40 pictures I knew the process had to be automated. Since I barely knew python at the time, and I still find myself learning more and more everyday, it's taken a lot of on and off work, but now I have a script that can do what would've taken years of consistent effort in a few minutes. Even though another solution *kinda* exists, I'm super proud of it because it's mine (I say kinda because I couldn't get it to work for me).
+
+Here's the github repo with a lot of details on how it works:  [https://github.com/Noah6544/Daily-Picture-Aligner](https://github.com/Noah6544/Daily-Picture-Aligner)
+
+Here's my video explanation: [https://www.youtube.com/watch?v=\_ow6GLv7VSA&](https://www.youtube.com/watch?v=_ow6GLv7VSA&)
+
+Please let me know ***any*** feedback you have!",18tbeet,19,1,https://www.reddit.com/r/Python/comments/18tbeet/i_created_a_program_to_align_thousands_of_selfies/
+86,FireDucks - Compiler Accelerated DataFrame Library for Python with fully-compatible pandas API,,18qb2ge,19,14,https://fireducks-dev.github.io/
+87,"I'm putting together a minimalist build system in Python, and this is the ""Hello World"" example. Thoughts?","I'm curious as to how folks with more Python experience than me will view the following simple example for building a C++ binary using my homebrew minimalist build sytem called ""tinybuild"". I'm intentionally not including any documentation in this snippet as I'm hoping to find out what parts are non-obvious to a new reader.
+
+[https://pastebin.com/qGpJqpNC](https://pastebin.com/qGpJqpNC)
+
+The still-very-work-in-progress repo is at [https://github.com/aappleby/tinybuild](https://github.com/aappleby/tinybuild). Thanks in advance for the feedback.
+
+&#x200B;",1975xcu,16,23,https://www.reddit.com/r/Python/comments/1975xcu/im_putting_together_a_minimalist_build_system_in/
+88,Maze generator in Python and Pygame,"I made Maze generator using Python and Pygame.  
+  
+Code: https://github.com/DataWizual/Maze-generator  
+  
+Here's the video explaining how I did it: https://www.youtube.com/watch?v=oZP496TVf3A",194ybxd,20,4,https://www.reddit.com/r/Python/comments/194ybxd/maze_generator_in_python_and_pygame/
+89,Error Handling in Python Programming,,18s72tj,21,7,https://mymasterdesigner.com/2023/12/26/error-handling-in-python-programming/
+90,"I wrote mathler solver, here are my thoughts after","Hello, 
+
+I spent last day on nice side project - mathler solver. Here is first part of my journey   
+https://medium.com/@jandanecki/solving-mathler-riddle-with-python-71a3247891a4  
+",1997duh,19,3,https://www.reddit.com/r/Python/comments/1997duh/i_wrote_mathler_solver_here_are_my_thoughts_after/
+91,I shared a Python Course (1.5 hours) on YouTube,,18v157k,19,9,https://www.youtube.com/watch?v=VOdPQmm298o&list=PLTsu3dft3CWiow7L7WrCd27ohlra_5PGH&index=1
+92,No formal schooling,"I’m been doing a lot of at home python training in my free time. I do have an associates degree but it’s in an entirely unrelated field. I’m just wondering what the job market would like for me with no degree in the python field. I’ve heard that some places only care if you actually know the material, regardless of formal education.",18ton3n,20,41,https://www.reddit.com/r/Python/comments/18ton3n/no_formal_schooling/
+93,"filequery 0.2.3 - query CSV, JSON and Parquet files with SQL","A few months ago I [posted an update](https://www.reddit.com/r/Python/comments/17s3pnc/filequery_a_clitui_for_querying_files_with_sql/) about a project I've been working on called filequery. This project is a CLI/TUI tool for querying CSV, JSON and Parquet files with SQL, using DuckDB behind the scenes. Since the last time I posted, filequery has gained a little attention on GitHub and I got some great suggestions from the community about what they would like to see.
+
+I just released version 0.2.3 so I wanted to give an update on what's changed since my last post. The changes this time are all improvements to the TUI.
+
+* The table list is now an interactive tree which can be expanded to see columns and data types
+* Support for tabs in the SQL editor to allow for more than one worksheet
+* Better keyboard navigation - you can switch panes and navigate tabs with ctrl+shift+<arrow keys>. The TUI is fully usable without the mouse now
+* Added a menu screen dialog. I moved options for saving the contents of the SQL editor and saving the result set to this menu to reduce clutter on the main screen
+
+Last time I posted I was able to include a screenshot of the TUI, but it looks like this sub doesn't allow images anymore. Either way, there are some screenshots in the repo if you want to check it out.
+
+PyPI: [https://pypi.org/project/filequery/](https://pypi.org/project/filequery/)
+
+GitHub: [https://github.com/MarkyMan4/filequery](https://github.com/MarkyMan4/filequery)",19dfvjk,21,4,https://www.reddit.com/r/Python/comments/19dfvjk/filequery_023_query_csv_json_and_parquet_files/
+94,Python module to facilitate the generation of custom JSON API nodes for Node-RED,"Hey there! I've developed a Python module that generate code for custom Node-Red nodes for JSON APIs. Take a look at it on GitHub: https://github.com/xaled/nodered-forge  
+Feedback is appreciated!",199pw6c,17,0,https://www.reddit.com/r/Python/comments/199pw6c/python_module_to_facilitate_the_generation_of/
+95,MadMath: GUI mental math trainer,"I've recently released my first public OSS software! Targeted for kids learning mental math, but useful for anyone looking to improve their solution speeds.
+
+https://github.com/coffeephreak/MadMath",1977xsi,17,7,https://www.reddit.com/r/Python/comments/1977xsi/madmath_gui_mental_math_trainer/
+96,Data Structures and Algorithms,"Hello everyone!
+
+For some time on this community, there was a complete google drive style playlist regarding Data Structures and Algorithms in Python. I followed it for some months but I did not finish the entire classes. 
+
+I guess it was the one attached to this thread on this community [https://www.reddit.com/r/Python/comments/lyux3w/the\_complete\_data\_structures\_and\_algorithms/](https://www.reddit.com/r/Python/comments/lyux3w/the_complete_data_structures_and_algorithms/)
+
+Is there anyone that has the correct link to the referred playlist?
+
+Thanks in advance!",18r9kw7,17,4,https://www.reddit.com/r/Python/comments/18r9kw7/data_structures_and_algorithms/
+97,PyJigsaw: A Digital Jigsaw Puzzle Factory,"I created a jigsaw puzzle constructor which uses mostly Python with a small assist from Inkscape. You can create SVG puzzle sets and templates programmatically, which could be useful as part of a jigsaw puzzle app (my original intention for it). I've shelved the wider project but the constructor was in a decent place, so decided to tidy it up and package it. Repo and install instructions are available on my [GitHub](https://github.com/tomdeabreucodes/PyJig).
+
+If you're interested in a slightly longer post with some additional background, I also put a post up about it [here](https://tomdeabreu.uk/posts/jigsaw-puzzle-cut-template-svg/).
+
+[blank cut template](https://preview.redd.it/esielejcf7ac1.png?width=1320&format=png&auto=webp&s=2c9ceb9e18c5c5ffa4c4b07bbfcf6963b35138f5)
+
+&#x200B;
+
+[Applied cut on image](https://preview.redd.it/0b5i72uef7ac1.png?width=1320&format=png&auto=webp&s=229a039f2fc9363060698044eccbd6833f524af1)
+
+&#x200B;",18xglbx,18,0,https://www.reddit.com/r/Python/comments/18xglbx/pyjigsaw_a_digital_jigsaw_puzzle_factory/
+98,Refactor using SOLID principles amounted to good speedup," I've been reading about SOLID principles and used this knowledge to refactor 2 out of the 4 functions provided in PyPi's unexpected-isaves, and this amounted to a \~1.3x speedup, even though making things run faster was not my first intention. I just wanted to make the project better for the new stargazers arriving. This shows the importance of good and simple code.
+
+ [Eric-Mendes/unexpected-isaves: A Python library that paints an image on a spreadsheet, builds its pixel art in Minecraft, makes its ascii art, or makes a rubik's cube art out of it. (github.com)](https://github.com/Eric-Mendes/unexpected-isaves) ",18rqeev,15,4,https://www.reddit.com/r/Python/comments/18rqeev/refactor_using_solid_principles_amounted_to_good/
+99,Commonwealth Bank of Australia async API client,,18qwl38,14,4,https://github.com/thebowenfeng/commbank-api-client
